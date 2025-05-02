@@ -4,6 +4,8 @@ target/
 .mvn/
 .mvnw
 .mvnw.cmd
+*.properties
+
 
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
