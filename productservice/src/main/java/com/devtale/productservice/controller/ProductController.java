@@ -1,9 +1,8 @@
 package com.devtale.productservice.controller;
 
 
-import com.devtale.productservice.DTO.ProductDTO;
+import com.devtale.productservice.dto.ProductDTO;
 import com.devtale.productservice.service.ProductService;
-import jakarta.ws.rs.Path;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

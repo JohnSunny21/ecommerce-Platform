@@ -1,7 +1,7 @@
 package com.devtale.productservice.service;
 
 
-import com.devtale.productservice.DTO.ProductDTO;
+import com.devtale.productservice.dto.ProductDTO;
 import com.devtale.productservice.exception.ProductNotFoundException;
 import com.devtale.productservice.model.Product;
 import com.devtale.productservice.repository.ProductRepository;

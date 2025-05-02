@@ -1,4 +1,4 @@
-package com.devtale.productservice.DTO;
+package com.devtale.productservice.dto;
 
 import lombok.Data;
 
