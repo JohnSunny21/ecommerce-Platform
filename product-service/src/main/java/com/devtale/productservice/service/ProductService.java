@@ -1,6 +1,7 @@
 package com.devtale.productservice.service;
 
 
+import com.devtale.productservice.client.InventoryClient;
 import com.devtale.productservice.dto.ProductDTO;
 import com.devtale.productservice.exception.ProductNotFoundException;
 import com.devtale.productservice.model.Product;
@@ -17,6 +18,9 @@ public class ProductService {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private InventoryClient inventoryClient;
 
     public List<ProductDTO> getAllProducts(){
         return productRepository.findAll().stream()
@@ -63,6 +67,7 @@ public class ProductService {
         dto.setCategory(product.getCategory());
         dto.setPrice(product.getPrice());
         dto.setDescription(product.getDescription());
+        dto.setStockQuantity(inventoryClient.getStockQuantity(product.getId()));
         return dto;
     }
 
